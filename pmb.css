@@ -26,7 +26,7 @@ body {
     color: var(--foreground-color);
     background: var(--body-color);
     font-family: var(--font);
-    max-width: 75rem;
+    max-width: 85rem;
     margin: auto;
     margin-bottom: unset;
     min-height: 100vh;
