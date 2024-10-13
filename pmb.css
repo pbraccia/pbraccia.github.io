@@ -1,0 +1,76 @@
+:root {
+    --background-color: #fff;
+    --body-color: #fff;
+    --foreground-color: #000;
+    --secondary-color: rgba(0,0,0,0.4);
+    --font: 'Inter var';
+    --tile-color: rgba(241,241,243,0.6);
+}
+
+/* --- Dark Mode --- */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --body-color: #333;
+        --foreground-color: #fff;
+        --secondary-color: rgba(255,255,255,0.4);
+        --tile-color: black;
+    }
+}
+
+html {
+    background: var(--background-color);
+}
+
+body {
+    color: var(--foreground-color);
+    background: var(--body-color);
+    font-family: var(--font);
+    max-width: 75rem;
+    margin: auto;
+    margin-bottom: unset;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.grid-container {
+    display: grid;
+}
+
+.tile {
+    border-radius: 18px;
+    background: var(--tile-color);
+    padding: 40px;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    letter-spacing: -.025rem;
+}
+
+footer {
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+}
